@@ -1,59 +1,19 @@
-integrantes: Laureano Hurtado, Daniel Avila, Pedro Herrera
+integrante: Laureano Hurtado
 
-# Node.js TypeScript Project
+# estructura del pipeline
 
-This project is a Node.js application written in TypeScript. It serves as a template for building scalable and maintainable applications using TypeScript.
+Los pipelines se ejecutan bajo las directrices de Github actions, el orden es Lint, ejecucion de Test con validacion de coverage y generacion de artefacto de testing unitario, y por ultimo el Build de la aplicacion.
 
-## Project Structure
 
-```
-node-typescript-project
-├── src
-│   └── index.ts        # Entry point of the application
-├── package.json        # npm configuration file
-├── tsconfig.json       # TypeScript configuration file
-└── README.md           # Project documentation
-```
+# Evidencias de fallo y acierto en pipelines
 
-## Getting Started
+Success
 
-To get started with this project, follow the steps below:
+![alt text](43f7fdaa-0f4b-48a8-baba-4e551dda7dab.jpg)
 
-1. **Clone the repository** (if applicable):
-   ```
-   git clone <repository-url>
-   ```
 
-2. **Navigate to the project directory**:
-   ```
-   cd node-typescript-project
-   ```
+failed
 
-3. **Install dependencies**:
-   ```
-   npm install
-   ```
+![alt text](99d3265e-652e-4a69-8846-9b25a786346e.jpg)
 
-4. **Compile TypeScript files**:
-   ```
-   npx tsc
-   ```
-
-5. **Run the application**:
-   ```
-   node dist/index.js
-   ```
-
-## Configuration
-
-- **TypeScript Configuration**: The `tsconfig.json` file contains the configuration for the TypeScript compiler. You can modify it to suit your project's needs.
-
-- **npm Configuration**: The `package.json` file lists the project's dependencies and scripts. You can add additional packages as needed.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
+![alt text](eb0f3f7b-1c15-4a29-b3f4-56aa06d5038f.jpg)
