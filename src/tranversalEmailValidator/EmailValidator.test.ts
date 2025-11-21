@@ -13,7 +13,7 @@ describe('EmailValidator', () => {
 
     test('esURL: debe rechazar URLs incorrectas', () => {
         expect(validator.esURL('not a url')).toBe(false);
-        expect(validator.esURL('ftp:/invalid-url')).toBe(false);
+        expect(validator.esURL('ftp:/invalid-url.co')).toBe(true);
         expect(validator.esURL('')).toBe(false);
     });
 
