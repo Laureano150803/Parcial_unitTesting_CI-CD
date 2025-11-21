@@ -19,7 +19,7 @@ describe('EmailValidator', () => {
 
     test('noVacio: debe validar textos no vacíos', () => {
         expect(validator.noVacio('Hello')).toBe(true);
-        expect(validator.noVacio('  World  ')).toBe(true);
+        expect(validator.noVacio(' ')).toBe(true);
     });
 
     test('noVacio: debe rechazar textos vacíos o nulos', () => {
